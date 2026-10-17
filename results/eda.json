@@ -1,0 +1,296 @@
+{
+ "baseline_table": {
+  "development": {
+   "n": 6081,
+   "age": "56.0 (47.0-66.0)",
+   "sbp": "128.0 (116.7-141.3)",
+   "dbp": "74.0 (67.3-81.3)",
+   "tchol": "208.0 (184.0-234.0)",
+   "hdl": "50.0 (41.0-62.0)",
+   "hba1c": "5.5 (5.2-5.8)",
+   "bmi": "28.0 (24.8-31.8)",
+   "egfr": "90.8 (77.5-101.8)",
+   "pir": "2.7 (1.3-4.6)",
+   "female": "50.7%",
+   "race_black": "18.9%",
+   "race_hispanic": "27.6%",
+   "smoker": "21.0%",
+   "former_smoker": "31.2%",
+   "diabetes": "15.0%",
+   "bp_treated": "27.5%",
+   "lipid_treated": "16.9%",
+   "education_college": "44.0%",
+   "10-year CVD death (complete follow-up)": "3.09%",
+   "median follow-up, years": "16.9"
+  },
+  "recent": {
+   "n": 13083,
+   "age": "56.0 (48.0-65.0)",
+   "sbp": "125.3 (114.7-137.3)",
+   "dbp": "72.7 (66.0-80.0)",
+   "tchol": "198.0 (172.0-224.0)",
+   "hdl": "51.0 (42.0-63.0)",
+   "hba1c": "5.7 (5.4-6.0)",
+   "bmi": "28.6 (25.0-33.1)",
+   "egfr": "93.3 (78.2-103.9)",
+   "pir": "2.4 (1.2-4.5)",
+   "female": "52.5%",
+   "race_black": "21.7%",
+   "race_hispanic": "26.9%",
+   "smoker": "18.4%",
+   "former_smoker": "26.4%",
+   "diabetes": "20.6%",
+   "bp_treated": "33.2%",
+   "lipid_treated": "24.0%",
+   "education_college": "53.5%",
+   "10-year CVD death (complete follow-up)": "8.25%",
+   "median follow-up, years": "5.8"
+  },
+  "temporal_test": {
+   "n": 4724,
+   "age": "56.0 (47.0-65.0)",
+   "sbp": "124.3 (114.7-137.3)",
+   "dbp": "72.7 (65.3-80.0)",
+   "tchol": "202.0 (177.0-229.0)",
+   "hdl": "51.0 (42.0-62.0)",
+   "hba1c": "5.6 (5.3-5.9)",
+   "bmi": "28.3 (24.9-32.3)",
+   "egfr": "91.7 (77.5-102.6)",
+   "pir": "2.6 (1.3-4.8)",
+   "female": "51.3%",
+   "race_black": "20.8%",
+   "race_hispanic": "25.6%",
+   "smoker": "21.3%",
+   "former_smoker": "28.9%",
+   "diabetes": "16.9%",
+   "bp_treated": "31.1%",
+   "lipid_treated": "25.3%",
+   "education_college": "47.4%",
+   "10-year CVD death (complete follow-up)": "2.82%",
+   "median follow-up, years": "12.3"
+  }
+ },
+ "n_binary": 10805,
+ "event_rate": 0.02970846830171217,
+ "noncvd_death_rate": 0.09023600185099491,
+ "by_age_sex": [
+  {
+   "age_band": "(39, 49]",
+   "sex": "female",
+   "mean": 0.007357102433503113,
+   "size": 1767,
+   "sum": 13
+  },
+  {
+   "age_band": "(39, 49]",
+   "sex": "male",
+   "mean": 0.010273972602739725,
+   "size": 1752,
+   "sum": 18
+  },
+  {
+   "age_band": "(49, 59]",
+   "sex": "female",
+   "mean": 0.010393466963622866,
+   "size": 1347,
+   "sum": 14
+  },
+  {
+   "age_band": "(49, 59]",
+   "sex": "male",
+   "mean": 0.01804511278195489,
+   "size": 1330,
+   "sum": 24
+  },
+  {
+   "age_band": "(59, 69]",
+   "sex": "female",
+   "mean": 0.026458616010854818,
+   "size": 1474,
+   "sum": 39
+  },
+  {
+   "age_band": "(59, 69]",
+   "sex": "male",
+   "mean": 0.040769230769230766,
+   "size": 1300,
+   "sum": 53
+  },
+  {
+   "age_band": "(69, 79]",
+   "sex": "female",
+   "mean": 0.07298474945533769,
+   "size": 918,
+   "sum": 67
+  },
+  {
+   "age_band": "(69, 79]",
+   "sex": "male",
+   "mean": 0.10141766630316248,
+   "size": 917,
+   "sum": 93
+  }
+ ],
+ "by_pce_category": [
+  {
+   "pce": "<5%",
+   "n": 4501,
+   "cvd_death_rate": 0.005776494112419463,
+   "mean_pce": 0.02220874014679865
+  },
+  {
+   "pce": "5-7.5%",
+   "n": 1217,
+   "cvd_death_rate": 0.011503697617091208,
+   "mean_pce": 0.06171564366133085
+  },
+  {
+   "pce": "7.5-20%",
+   "n": 3060,
+   "cvd_death_rate": 0.028431372549019607,
+   "mean_pce": 0.12825364808537518
+  },
+  {
+   "pce": ">=20%",
+   "n": 2027,
+   "cvd_death_rate": 0.0957079427725703,
+   "mean_pce": 0.3184164273120964
+  }
+ ],
+ "weighted_vs_unweighted": {
+  "smoker": {
+   "unweighted": 0.21119851920407218,
+   "survey_weighted": 0.21043117322257807
+  },
+  "diabetes": {
+   "unweighted": 0.15816751503933363,
+   "survey_weighted": 0.10867506336179741
+  },
+  "bp_treated": {
+   "unweighted": 0.2906987505784359,
+   "survey_weighted": 0.2503387669044819
+  },
+  "female": {
+   "unweighted": 0.5095788986580287,
+   "survey_weighted": 0.5235746113842772
+  },
+  "race_black": {
+   "unweighted": 0.197223507635354,
+   "survey_weighted": 0.0935653758520303
+  },
+  "cvd_death_10y": {
+   "unweighted": 0.02970846830171217,
+   "survey_weighted": 0.02015576517344767
+  }
+ },
+ "univariable_tests": {
+  "age": {
+   "test": "Mann-Whitney U",
+   "p": 9.193189134651769e-54,
+   "effect_P(event>non-event)": 0.7524229176992444,
+   "p_holm": 1.6547740442373185e-52
+  },
+  "sbp": {
+   "test": "Mann-Whitney U",
+   "p": 4.9544327473327816e-23,
+   "effect_P(event>non-event)": 0.6616471502042572,
+   "p_holm": 8.422535670465729e-22
+  },
+  "dbp": {
+   "test": "Mann-Whitney U",
+   "p": 0.000128695304561183,
+   "effect_P(event>non-event)": 0.43689407426014715,
+   "p_holm": 0.00128695304561183
+  },
+  "tchol": {
+   "test": "Mann-Whitney U",
+   "p": 0.8718898678110857,
+   "effect_P(event>non-event)": 0.5026379018733189,
+   "p_holm": 1.0
+  },
+  "hdl": {
+   "test": "Mann-Whitney U",
+   "p": 0.05130362575282598,
+   "effect_P(event>non-event)": 0.4681269247546476,
+   "p_holm": 0.20521450301130392
+  },
+  "hba1c": {
+   "test": "Mann-Whitney U",
+   "p": 4.672369541340985e-11,
+   "effect_P(event>non-event)": 0.6073921093649318,
+   "p_holm": 5.606843449609182e-10
+  },
+  "bmi": {
+   "test": "Mann-Whitney U",
+   "p": 0.976695326717724,
+   "effect_P(event>non-event)": 0.4995067444201665,
+   "p_holm": 1.0
+  },
+  "egfr": {
+   "test": "Mann-Whitney U",
+   "p": 8.145392022679833e-22,
+   "effect_P(event>non-event)": 0.32385045526175493,
+   "p_holm": 1.2218088034019749e-20
+  },
+  "pir": {
+   "test": "Mann-Whitney U",
+   "p": 4.1815703801510065e-14,
+   "effect_P(event>non-event)": 0.3710237419336478,
+   "p_holm": 5.854198532211409e-13
+  },
+  "female": {
+   "test": "chi-square",
+   "p": 0.0006523488113196936,
+   "risk_ratio": 0.680850097765687,
+   "p_holm": 0.005871139301877242
+  },
+  "race_black": {
+   "test": "chi-square",
+   "p": 0.014361604857953828,
+   "risk_ratio": 1.3737564523697794,
+   "p_holm": 0.07180802428976914
+  },
+  "race_hispanic": {
+   "test": "chi-square",
+   "p": 0.0666078749728667,
+   "risk_ratio": 0.7781737625475943,
+   "p_holm": 0.20521450301130392
+  },
+  "smoker": {
+   "test": "chi-square",
+   "p": 0.004047885024096857,
+   "risk_ratio": 1.432777886911058,
+   "p_holm": 0.028335195168677996
+  },
+  "former_smoker": {
+   "test": "chi-square",
+   "p": 0.005493203746771311,
+   "risk_ratio": 1.3787113437407146,
+   "p_holm": 0.03295922248062787
+  },
+  "diabetes": {
+   "test": "chi-square",
+   "p": 3.76991872083298e-12,
+   "risk_ratio": 2.2708952603861907,
+   "p_holm": 4.9008943370828744e-11
+  },
+  "bp_treated": {
+   "test": "chi-square",
+   "p": 1.733033978699988e-22,
+   "risk_ratio": 2.8166295947300157,
+   "p_holm": 2.772854365919981e-21
+  },
+  "lipid_treated": {
+   "test": "chi-square",
+   "p": 0.0020142727713582595,
+   "risk_ratio": 1.5399092970521542,
+   "p_holm": 0.016114182170866076
+  },
+  "education_college": {
+   "test": "chi-square",
+   "p": 7.12142993253076e-09,
+   "risk_ratio": 0.49997332429072,
+   "p_holm": 7.833572925783835e-08
+  }
+ }
+}

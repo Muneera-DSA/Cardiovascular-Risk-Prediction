@@ -1,0 +1,23 @@
+{
+ "correct (baseline variables, temporal split)": {
+  "auc": 0.8223592088476473,
+  "pr_auc": 0.14016940600483893
+ },
+ "+ death-certificate diabetes & hypertension flags (recorded after death)": {
+  "auc": 0.8402611844357136,
+  "pr_auc": 0.18070203037450727
+ },
+ "random split instead of temporal (same features)": {
+  "auc": 0.7965594614809275,
+  "pr_auc": 0.1325560442665485
+ },
+ "+ people who already had heart disease or stroke (prior CVD as a feature)": {
+  "auc": 0.8320581490541501,
+  "pr_auc": 0.16133605838784892
+ },
+ "note_prior_cvd": {
+  "share_with_prior_cvd": 0.15523015299757043,
+  "event_rate_prior_cvd": 0.1751269035532995,
+  "event_rate_no_prior_cvd": 0.03816556548775748
+ }
+}

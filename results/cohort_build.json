@@ -1,0 +1,1182 @@
+{
+  "steps": [
+    {
+      "step": "adults in NHANES 1999-2018 (all ages, interviewed)",
+      "removed": 0,
+      "remaining": 59204
+    },
+    {
+      "step": "examined at the mobile examination centre",
+      "removed": 2837,
+      "remaining": 56367
+    },
+    {
+      "step": "aged 40-79",
+      "removed": 25663,
+      "remaining": 30704
+    },
+    {
+      "step": "not pregnant",
+      "removed": 31,
+      "remaining": 30673
+    },
+    {
+      "step": "eligible for mortality linkage",
+      "removed": 70,
+      "remaining": 30603
+    },
+    {
+      "step": "no self-reported heart disease or stroke (prevention population)",
+      "removed": 4314,
+      "remaining": 26289
+    },
+    {
+      "step": "core risk factors measured (cholesterol, HDL, BP, BP treatment, smoking, diabetes)",
+      "removed": 2401,
+      "remaining": 23888
+    },
+    {
+      "step": "follow-up time recorded",
+      "removed": 0,
+      "remaining": 23888
+    }
+  ],
+  "provenance": {
+    "1999": {
+      "DEMO": {
+        "file": "DEMO.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050",
+          "DIQ070"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "LAB13.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "LAB13.xpt",
+        "found": [
+          "LBDHDL"
+        ]
+      },
+      "ghb": {
+        "file": "LAB10.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "LAB18.xpt",
+        "found": [
+          "LBXSCR"
+        ]
+      }
+    },
+    "2001": {
+      "DEMO": {
+        "file": "DEMO_B.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX_B.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ_B.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ_B.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ_B.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050",
+          "DIQ070"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ_B.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX_B.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "L13_B.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "L13_B.xpt",
+        "found": [
+          "LBDHDL"
+        ]
+      },
+      "ghb": {
+        "file": "L10_B.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "L40_B.xpt",
+        "found": []
+      }
+    },
+    "2003": {
+      "DEMO": {
+        "file": "DEMO_C.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX_C.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ_C.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ_C.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ_C.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050",
+          "DIQ070"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ_C.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX_C.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "L13_C.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "L13_C.xpt",
+        "found": [
+          "LBXHDD"
+        ]
+      },
+      "ghb": {
+        "file": "L10_C.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "L40_C.xpt",
+        "found": [
+          "LBXSCR"
+        ]
+      }
+    },
+    "2005": {
+      "DEMO": {
+        "file": "DEMO_D.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX_D.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ_D.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ_D.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ_D.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ_D.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX_D.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "TCHOL_D.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "HDL_D.xpt",
+        "found": [
+          "LBDHDD"
+        ]
+      },
+      "ghb": {
+        "file": "GHB_D.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "BIOPRO_D.xpt",
+        "found": [
+          "LBXSCR"
+        ]
+      }
+    },
+    "2007": {
+      "DEMO": {
+        "file": "DEMO_E.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX_E.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ_E.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ_E.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ_E.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ_E.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX_E.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "TCHOL_E.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "HDL_E.xpt",
+        "found": [
+          "LBDHDD"
+        ]
+      },
+      "ghb": {
+        "file": "GHB_E.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "BIOPRO_E.xpt",
+        "found": [
+          "LBXSCR"
+        ]
+      }
+    },
+    "2009": {
+      "DEMO": {
+        "file": "DEMO_F.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX_F.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ_F.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ_F.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ_F.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050",
+          "DIQ070"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ_F.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX_F.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "TCHOL_F.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "HDL_F.xpt",
+        "found": [
+          "LBDHDD"
+        ]
+      },
+      "ghb": {
+        "file": "GHB_F.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "BIOPRO_F.xpt",
+        "found": [
+          "LBXSCR"
+        ]
+      }
+    },
+    "2011": {
+      "DEMO": {
+        "file": "DEMO_G.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX_G.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ_G.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ_G.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ_G.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050",
+          "DIQ070"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ_G.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX_G.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "TCHOL_G.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "HDL_G.xpt",
+        "found": [
+          "LBDHDD"
+        ]
+      },
+      "ghb": {
+        "file": "GHB_G.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "BIOPRO_G.xpt",
+        "found": [
+          "LBXSCR"
+        ]
+      }
+    },
+    "2013": {
+      "DEMO": {
+        "file": "DEMO_H.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX_H.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ_H.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ_H.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ_H.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050",
+          "DIQ070"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ_H.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX_H.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "TCHOL_H.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "HDL_H.xpt",
+        "found": [
+          "LBDHDD"
+        ]
+      },
+      "ghb": {
+        "file": "GHB_H.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "BIOPRO_H.xpt",
+        "found": [
+          "LBXSCR"
+        ]
+      }
+    },
+    "2015": {
+      "DEMO": {
+        "file": "DEMO_I.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX_I.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ_I.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ_I.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ_I.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050",
+          "DIQ070"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ_I.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX_I.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "TCHOL_I.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "HDL_I.xpt",
+        "found": [
+          "LBDHDD"
+        ]
+      },
+      "ghb": {
+        "file": "GHB_I.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "BIOPRO_I.xpt",
+        "found": [
+          "LBXSCR"
+        ]
+      }
+    },
+    "2017": {
+      "DEMO": {
+        "file": "DEMO_J.xpt",
+        "found": [
+          "RIDSTATR",
+          "RIAGENDR",
+          "RIDAGEYR",
+          "RIDRETH1",
+          "DMDEDUC2",
+          "INDFMPIR",
+          "RIDEXPRG",
+          "WTMEC2YR",
+          "SDMVPSU",
+          "SDMVSTRA"
+        ]
+      },
+      "BPX": {
+        "file": "BPX_J.xpt",
+        "found": [
+          "BPXSY1",
+          "BPXSY2",
+          "BPXSY3",
+          "BPXSY4",
+          "BPXDI1",
+          "BPXDI2",
+          "BPXDI3",
+          "BPXDI4"
+        ]
+      },
+      "BPQ": {
+        "file": "BPQ_J.xpt",
+        "found": [
+          "BPQ020",
+          "BPQ040A",
+          "BPQ050A",
+          "BPQ080",
+          "BPQ090D",
+          "BPQ100D"
+        ]
+      },
+      "SMQ": {
+        "file": "SMQ_J.xpt",
+        "found": [
+          "SMQ020",
+          "SMQ040"
+        ]
+      },
+      "DIQ": {
+        "file": "DIQ_J.xpt",
+        "found": [
+          "DIQ010",
+          "DIQ050",
+          "DIQ070"
+        ]
+      },
+      "MCQ": {
+        "file": "MCQ_J.xpt",
+        "found": [
+          "MCQ160B",
+          "MCQ160C",
+          "MCQ160D",
+          "MCQ160E",
+          "MCQ160F"
+        ]
+      },
+      "BMX": {
+        "file": "BMX_J.xpt",
+        "found": [
+          "BMXBMI",
+          "BMXWAIST"
+        ]
+      },
+      "tchol": {
+        "file": "TCHOL_J.xpt",
+        "found": [
+          "LBXTC"
+        ]
+      },
+      "hdl": {
+        "file": "HDL_J.xpt",
+        "found": [
+          "LBDHDD"
+        ]
+      },
+      "ghb": {
+        "file": "GHB_J.xpt",
+        "found": [
+          "LBXGH"
+        ]
+      },
+      "biopro": {
+        "file": "BIOPRO_J.xpt",
+        "found": [
+          "LBXSCR"
+        ]
+      }
+    }
+  },
+  "lmf_checks": {
+    "1999": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 0.9994029850746269,
+      "eligible: follow-up months 0-300": 1.0
+    },
+    "2001": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 0.999384236453202,
+      "eligible: follow-up months 0-300": 1.0
+    },
+    "2003": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 1.0,
+      "eligible: follow-up months 0-300": 1.0
+    },
+    "2005": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 1.0,
+      "eligible: follow-up months 0-300": 1.0
+    },
+    "2007": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 1.0,
+      "eligible: follow-up months 0-300": 1.0
+    },
+    "2009": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 1.0,
+      "eligible: follow-up months 0-300": 1.0
+    },
+    "2011": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 1.0,
+      "eligible: follow-up months 0-300": 1.0
+    },
+    "2013": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 1.0,
+      "eligible: follow-up months 0-300": 1.0
+    },
+    "2015": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 1.0,
+      "eligible: follow-up months 0-300": 1.0
+    },
+    "2017": {
+      "linked to a survey participant": 1.0,
+      "eligstat in {1,2,3}": 1.0,
+      "eligible: mortstat in {0,1}": 1.0,
+      "deaths: cause code 1-10": 1.0,
+      "eligible: follow-up months 0-300": 1.0
+    }
+  },
+  "lmf_layout_vs_nchs": {
+    "seqn": {
+      "ours": [
+        1,
+        6
+      ],
+      "nchs_program": [
+        [
+          1,
+          6
+        ]
+      ]
+    },
+    "eligstat": {
+      "ours": [
+        15,
+        15
+      ],
+      "nchs_program": [
+        [
+          15,
+          15
+        ]
+      ]
+    },
+    "mortstat": {
+      "ours": [
+        16,
+        16
+      ],
+      "nchs_program": [
+        [
+          16,
+          16
+        ]
+      ]
+    },
+    "ucod_leading": {
+      "ours": [
+        17,
+        19
+      ],
+      "nchs_program": [
+        [
+          17,
+          19
+        ]
+      ]
+    },
+    "diabetes_flag": {
+      "ours": [
+        20,
+        20
+      ],
+      "nchs_program": [
+        [
+          20,
+          20
+        ]
+      ]
+    },
+    "hyperten_flag": {
+      "ours": [
+        21,
+        21
+      ],
+      "nchs_program": [
+        [
+          21,
+          21
+        ]
+      ]
+    },
+    "permth_int": {
+      "ours": [
+        43,
+        45
+      ],
+      "nchs_program": [
+        [
+          43,
+          45
+        ]
+      ]
+    },
+    "permth_exm": {
+      "ours": [
+        46,
+        48
+      ],
+      "nchs_program": [
+        [
+          46,
+          48
+        ]
+      ]
+    }
+  }
+}

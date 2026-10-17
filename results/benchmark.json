@@ -1,0 +1,188 @@
+{
+ "table": [
+  {
+   "model": "Random forest",
+   "cv_auc": 0.7945871996519975,
+   "cv_auc_sd": 0.03775762479260426,
+   "cv_pr_auc": 0.1456982957222155,
+   "cv_brier": 0.028434120917756763,
+   "seconds": 37.8,
+   "p_vs_best": 1.0,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "Logistic regression (L1, C=0.05)",
+   "cv_auc": 0.7902936674253729,
+   "cv_auc_sd": 0.0312340052128524,
+   "cv_pr_auc": 0.1521757538144246,
+   "cv_brier": 0.028547435500466237,
+   "seconds": 0.8,
+   "p_vs_best": 0.7713392150090812,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "Pooled Cohort Equations (published, not refitted)",
+   "cv_auc": 0.7894551536736814,
+   "cv_auc_sd": 0.024573904355877817,
+   "cv_pr_auc": 0.15267037069069236,
+   "cv_brier": 0.042246653252707364,
+   "seconds": 0.0,
+   "p_vs_best": 0.7292471446772549,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "Logistic regression (all features, age spline)",
+   "cv_auc": 0.7883398136533869,
+   "cv_auc_sd": 0.03541316760267022,
+   "cv_pr_auc": 0.15476815936386837,
+   "cv_brier": 0.028509310922828122,
+   "seconds": 1.4,
+   "p_vs_best": 0.6316225118762568,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "PCE variables, refitted",
+   "cv_auc": 0.7864833086542667,
+   "cv_auc_sd": 0.029033423274774584,
+   "cv_pr_auc": 0.1383082228360747,
+   "cv_brier": 0.028517726402287405,
+   "seconds": 1.0,
+   "p_vs_best": 0.5738511972692911,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "XGBoost (3.4.1)",
+   "cv_auc": 0.7858046662036579,
+   "cv_auc_sd": 0.03777458789615651,
+   "cv_pr_auc": 0.1488904311905592,
+   "cv_brier": 0.028536405949681813,
+   "seconds": 14.0,
+   "p_vs_best": 0.35868720681518534,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "Extra trees",
+   "cv_auc": 0.7838376779845012,
+   "cv_auc_sd": 0.03843228504159424,
+   "cv_pr_auc": 0.12889113812159617,
+   "cv_brier": 0.02875392770915805,
+   "seconds": 25.6,
+   "p_vs_best": 0.3730702269359859,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "LightGBM (4.6.0)",
+   "cv_auc": 0.7817277700095137,
+   "cv_auc_sd": 0.036789744067953316,
+   "cv_pr_auc": 0.1554160323968013,
+   "cv_brier": 0.028578351083184246,
+   "seconds": 8.1,
+   "p_vs_best": 0.1772070402716301,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "AdaBoost",
+   "cv_auc": 0.781695878205744,
+   "cv_auc_sd": 0.028986487963166094,
+   "cv_pr_auc": 0.13468227395873641,
+   "cv_brier": 0.1086205416485377,
+   "seconds": 31.3,
+   "p_vs_best": 0.31754176315019816,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "Histogram gradient boosting",
+   "cv_auc": 0.7816187712062669,
+   "cv_auc_sd": 0.03561750535052503,
+   "cv_pr_auc": 0.14184266589325212,
+   "cv_brier": 0.02863918691601002,
+   "seconds": 4.3,
+   "p_vs_best": 0.27677272799916386,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "LDA",
+   "cv_auc": 0.7796876156125511,
+   "cv_auc_sd": 0.04001200462653181,
+   "cv_pr_auc": 0.13784340885870375,
+   "cv_brier": 0.03216851102672503,
+   "seconds": 0.7,
+   "p_vs_best": 0.30920461024703033,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "Gaussian naive Bayes",
+   "cv_auc": 0.7698190941215597,
+   "cv_auc_sd": 0.03707815360682436,
+   "cv_pr_auc": 0.10187440591151775,
+   "cv_brier": 0.14312480411292872,
+   "seconds": 0.4,
+   "p_vs_best": 0.14543356040207278,
+   "p_vs_best_holm": 1.0
+  },
+  {
+   "model": "Age + sex (spline)",
+   "cv_auc": 0.7531329438879331,
+   "cv_auc_sd": 0.031386085134385296,
+   "cv_pr_auc": 0.10209685961783681,
+   "cv_brier": 0.028999144589389063,
+   "seconds": 0.6,
+   "p_vs_best": 0.03777090084069204,
+   "p_vs_best_holm": 0.4532508100883045
+  },
+  {
+   "model": "k-nearest neighbours (k=100)",
+   "cv_auc": 0.739905104887155,
+   "cv_auc_sd": 0.05024362521334877,
+   "cv_pr_auc": 0.11934594776868276,
+   "cv_brier": 0.029079206666522507,
+   "seconds": 1.9,
+   "p_vs_best": 0.005724828038832773,
+   "p_vs_best_holm": 0.07442276450482606
+  },
+  {
+   "model": "Decision tree (depth 4)",
+   "cv_auc": 0.7017704828443999,
+   "cv_auc_sd": 0.04687946235639576,
+   "cv_pr_auc": 0.07438179198075928,
+   "cv_brier": 0.029773141248567513,
+   "seconds": 0.8,
+   "p_vs_best": 2.4254783752217096e-05,
+   "p_vs_best_holm": 0.00036382175628325646
+  },
+  {
+   "model": "SVM (RBF, Platt)",
+   "cv_auc": 0.6735863653637547,
+   "cv_auc_sd": 0.06289829469474811,
+   "cv_pr_auc": 0.11398252067426011,
+   "cv_brier": 0.0294986719807605,
+   "seconds": 33.9,
+   "p_vs_best": 0.00014807130829220613,
+   "p_vs_best_holm": 0.002072998316090886
+  },
+  {
+   "model": "Neural network (MLP 16)",
+   "cv_auc": 0.5572160322019567,
+   "cv_auc_sd": 0.055521769655671405,
+   "cv_pr_auc": 0.059676709637868836,
+   "cv_brier": 0.04393766686601753,
+   "seconds": 5.9,
+   "p_vs_best": 7.779792350279947e-07,
+   "p_vs_best_holm": 1.2447667760447915e-05
+  },
+  {
+   "model": "Prior only (no information)",
+   "cv_auc": 0.5,
+   "cv_auc_sd": 0.0,
+   "cv_pr_auc": 0.0309159170522856,
+   "cv_brier": 0.0299602125748583,
+   "seconds": 0.2,
+   "p_vs_best": 2.302413180679218e-13,
+   "p_vs_best_holm": 3.914102407154671e-12
+  }
+ ],
+ "best": "Random forest",
+ "folds": "5x5 stratified",
+ "n": 6081,
+ "events": 188
+}

@@ -1,0 +1,838 @@
+{
+ "quality": {
+  "rows": 918,
+  "columns": 12,
+  "missing_values": 0,
+  "exact_duplicates": 0,
+  "cholesterol_zero": 172,
+  "resting_bp_zero": 1,
+  "oldpeak_negative": 13,
+  "disease_rate": 0.5533769063180828,
+  "site_matched": 918,
+  "site_assignment": {
+   "exact match": 916,
+   "neighbouring rows (ambiguous match)": 2
+  },
+  "by_site": [
+   {
+    "site": "Cleveland (USA)",
+    "patients": 303,
+    "disease_rate": 0.45874587458745875,
+    "cholesterol_zero": 0.0,
+    "resting_bp_zero": 0.0
+   },
+   {
+    "site": "Budapest (Hungary)",
+    "patients": 293,
+    "disease_rate": 0.36177474402730375,
+    "cholesterol_zero": 0.0,
+    "resting_bp_zero": 0.0
+   },
+   {
+    "site": "Zurich & Basel (Switzerland)",
+    "patients": 123,
+    "disease_rate": 0.9349593495934959,
+    "cholesterol_zero": 1.0,
+    "resting_bp_zero": 0.0
+   },
+   {
+    "site": "Long Beach VA (USA)",
+    "patients": 199,
+    "disease_rate": 0.7437185929648241,
+    "cholesterol_zero": 0.24623115577889448,
+    "resting_bp_zero": 0.005025125628140704
+   }
+  ]
+ },
+ "cholesterol_shortcut": {
+  "disease_rate_when_cholesterol_zero": 0.8837209302325582,
+  "disease_rate_when_measured": 0.4772117962466488,
+  "auc_of_the_zero_flag_alone": 0.6252160553101593,
+  "mean_cholesterol_by_class_with_zeros": {
+   "0": 227.1219512195122,
+   "1": 175.94094488188978
+  },
+  "mean_cholesterol_by_class_measured_only": {
+   "0": 238.76923076923077,
+   "1": 251.06179775280899
+  },
+  "measured_only_mannwhitney_p": 0.0017130070426659358,
+  "zeros_by_site": {
+   "switzerland": 123,
+   "va": 49
+  }
+ },
+ "original_pipeline": {
+  "split": {
+   "train": 734,
+   "test": 184,
+   "test_positive": 102
+  },
+  "models": [
+   {
+    "model": "LogisticRegression",
+    "cv_train_auc": 0.9309144455406706,
+    "cv_auc": 0.9220258452778778,
+    "notebook_test_score (AUC of 0/1 predictions)": 0.887613582018173,
+    "balanced_accuracy": 0.8876135820181731,
+    "test_auc (probabilities)": 0.9351984696317551,
+    "test_auc_ci": [
+     0.897826758032453,
+     0.9725701812310572
+    ]
+   },
+   {
+    "model": "KNeighborsClassifier",
+    "cv_train_auc": 0.9623970707138113,
+    "cv_auc": 0.9042547846612887,
+    "notebook_test_score (AUC of 0/1 predictions)": 0.8607125777140123,
+    "balanced_accuracy": 0.8607125777140124,
+    "test_auc (probabilities)": 0.9140363462458154,
+    "test_auc_ci": [
+     0.8704898281210235,
+     0.9575828643706074
+    ]
+   },
+   {
+    "model": "DecisionTreeClassifier",
+    "cv_train_auc": 1.0,
+    "cv_auc": 0.7770443437923112,
+    "notebook_test_score (AUC of 0/1 predictions)": 0.7861071257771401,
+    "balanced_accuracy": 0.7861071257771401,
+    "test_auc (probabilities)": 0.78610712577714,
+    "test_auc_ci": [
+     0.7260279505464083,
+     0.8461863010078717
+    ]
+   },
+   {
+    "model": "RandomForestClassifier",
+    "cv_train_auc": 1.0,
+    "cv_auc": 0.921392901989108,
+    "notebook_test_score (AUC of 0/1 predictions)": 0.8998087039693925,
+    "balanced_accuracy": 0.8998087039693926,
+    "test_auc (probabilities)": 0.9433883309421328,
+    "test_auc_ci": [
+     0.9098837278797903,
+     0.9768929340044753
+    ]
+   },
+   {
+    "model": "SVC",
+    "cv_train_auc": 0.9607460819009693,
+    "cv_auc": 0.9255408788742121,
+    "notebook_test_score (AUC of 0/1 predictions)": 0.8998087039693925,
+    "balanced_accuracy": 0.8998087039693926,
+    "test_auc (probabilities)": 0.9313725490196079,
+    "test_auc_ci": [
+     0.8916315968624929,
+     0.9711135011767228
+    ]
+   },
+   {
+    "model": "XGBClassifier",
+    "cv_train_auc": 1.0,
+    "cv_auc": 0.9134995567515892,
+    "notebook_test_score (AUC of 0/1 predictions)": 0.9021999043519846,
+    "balanced_accuracy": 0.9021999043519847,
+    "test_auc (probabilities)": 0.9383070301291248,
+    "test_auc_ci": [
+     0.9012104623434094,
+     0.9754035979148401
+    ]
+   }
+  ],
+  "final_cell_bug": {
+   "columns_used": [
+    "Sex_M",
+    "ChestPainType_ATA",
+    "ChestPainType_NAP",
+    "ChestPainType_TA",
+    "RestingECG_Normal",
+    "RestingECG_ST",
+    "ExerciseAngina_Y",
+    "ST_Slope_Flat",
+    "ST_Slope_Up"
+   ],
+   "cv_accuracy_dummies_only": 0.8556425309849967,
+   "cv_accuracy_all_features": 0.8569844376106607
+  }
+ },
+ "class_balance": {
+  "positive_share": 0.5533769063180828,
+  "by_site": {
+   "cleveland": 0.45874587458745875,
+   "hungarian": 0.36177474402730375,
+   "switzerland": 0.9349593495934959,
+   "va": 0.7437185929648241
+  },
+  "cv": {
+   "Logistic regression / none": {
+    "auc": 0.9290808320430322,
+    "balanced_accuracy": 0.8657031312887387
+   },
+   "Logistic regression / class weights": {
+    "auc": 0.9292541822331445,
+    "balanced_accuracy": 0.8646895937800381
+   },
+   "Random forest / none": {
+    "auc": 0.9314478363187826,
+    "balanced_accuracy": 0.8651667447949961
+   },
+   "Random forest / class weights": {
+    "auc": 0.9317880496801473,
+    "balanced_accuracy": 0.8671462325572586
+   }
+  }
+ },
+ "model_screen": {
+  "table": [
+   {
+    "model": "Extra trees",
+    "cv_auc": 0.9320777874057132,
+    "cv_auc_sd": 0.01897279352909434,
+    "train_auc": 0.9776074665509065,
+    "brier": 0.10012505130637245,
+    "accuracy": 0.8671050130672369,
+    "p_vs_best (corrected t)": 1.0,
+    "p_vs_best (Holm)": 1.0
+   },
+   {
+    "model": "Random forest",
+    "cv_auc": 0.9312779190401106,
+    "cv_auc_sd": 0.019879947206469167,
+    "train_auc": 0.9880179657418934,
+    "brier": 0.10038392853904937,
+    "accuracy": 0.8705939653124257,
+    "p_vs_best (corrected t)": 0.7689808883834934,
+    "p_vs_best (Holm)": 1.0
+   },
+   {
+    "model": "Histogram gradient boosting",
+    "cv_auc": 0.9294235076305335,
+    "cv_auc_sd": 0.019243643883275856,
+    "train_auc": 0.9846096349891557,
+    "brier": 0.09834064025098373,
+    "accuracy": 0.8686392254692327,
+    "p_vs_best (corrected t)": 0.589056452467666,
+    "p_vs_best (Holm)": 1.0
+   },
+   {
+    "model": "SVM (RBF)",
+    "cv_auc": 0.9283241473358239,
+    "cv_auc_sd": 0.018191395395833494,
+    "train_auc": 0.9606077018303679,
+    "brier": 0.09988705426254241,
+    "accuracy": 0.8689599667379426,
+    "p_vs_best (corrected t)": 0.3139366111092004,
+    "p_vs_best (Holm)": 1.0
+   },
+   {
+    "model": "Logistic regression",
+    "cv_auc": 0.9280042236648341,
+    "cv_auc_sd": 0.018755992750007063,
+    "train_auc": 0.9372258189835986,
+    "brier": 0.10215003595198749,
+    "accuracy": 0.87015918270373,
+    "p_vs_best (corrected t)": 0.21115597462922964,
+    "p_vs_best (Holm)": 1.0
+   },
+   {
+    "model": "LDA",
+    "cv_auc": 0.9278957436633191,
+    "cv_auc_sd": 0.0186324359595398,
+    "train_auc": 0.9358685358296377,
+    "brier": 0.10456706905456076,
+    "accuracy": 0.8697226181990971,
+    "p_vs_best (corrected t)": 0.1777984134884228,
+    "p_vs_best (Holm)": 1.0
+   },
+   {
+    "model": "Gradient boosting",
+    "cv_auc": 0.9276959718927417,
+    "cv_auc_sd": 0.018121155273666083,
+    "train_auc": 0.98906157775691,
+    "brier": 0.09992831568674373,
+    "accuracy": 0.8686410073651699,
+    "p_vs_best (corrected t)": 0.31310752238374906,
+    "p_vs_best (Holm)": 1.0
+   },
+   {
+    "model": "XGBoost (3.4.1)",
+    "cv_auc": 0.9275938486962039,
+    "cv_auc_sd": 0.01977324989866847,
+    "train_auc": 0.9903275332911581,
+    "brier": 0.09924132686562441,
+    "accuracy": 0.8708184842005228,
+    "p_vs_best (corrected t)": 0.3760867489077708,
+    "p_vs_best (Holm)": 1.0
+   },
+   {
+    "model": "Logistic regression (L1, C=0.1)",
+    "cv_auc": 0.9255038093479361,
+    "cv_auc_sd": 0.017743609822346542,
+    "train_auc": 0.9313889266917021,
+    "brier": 0.10621302379924769,
+    "accuracy": 0.8603623188405796,
+    "p_vs_best (corrected t)": 0.1033955891061721,
+    "p_vs_best (Holm)": 0.9305603019555488
+   },
+   {
+    "model": "LightGBM (4.6.0)",
+    "cv_auc": 0.9247434076262718,
+    "cv_auc_sd": 0.018622837468199833,
+    "train_auc": 1.0,
+    "brier": 0.10765101036335896,
+    "accuracy": 0.8601372059871705,
+    "p_vs_best (corrected t)": 0.13180760064100944,
+    "p_vs_best (Holm)": 1.0
+   },
+   {
+    "model": "k-nearest neighbours (k=15)",
+    "cv_auc": 0.9214458831105493,
+    "cv_auc_sd": 0.019083396478532758,
+    "train_auc": 0.9435611980108405,
+    "brier": 0.10650092394604156,
+    "accuracy": 0.8601348301259206,
+    "p_vs_best (corrected t)": 0.07828692183375409,
+    "p_vs_best (Holm)": 0.7828692183375409
+   },
+   {
+    "model": "AdaBoost",
+    "cv_auc": 0.9193738606285303,
+    "cv_auc_sd": 0.018899276900849797,
+    "train_auc": 0.9502515527116033,
+    "brier": 0.18774472935120293,
+    "accuracy": 0.8615520313613685,
+    "p_vs_best (corrected t)": 0.0016284113346271283,
+    "p_vs_best (Holm)": 0.02116934735015267
+   },
+   {
+    "model": "Gaussian naive Bayes",
+    "cv_auc": 0.9161614131284003,
+    "cv_auc_sd": 0.02156452585059108,
+    "train_auc": 0.9227165154078527,
+    "brier": 0.2500197572708378,
+    "accuracy": 0.7205203136136847,
+    "p_vs_best (corrected t)": 0.03882599149635618,
+    "p_vs_best (Holm)": 0.427085906459918
+   },
+   {
+    "model": "Neural network (MLP 16)",
+    "cv_auc": 0.9072789560161182,
+    "cv_auc_sd": 0.02069626381807092,
+    "train_auc": 0.9882173285537458,
+    "brier": 0.12383589829304857,
+    "accuracy": 0.8417153718222855,
+    "p_vs_best (corrected t)": 0.001879744665316023,
+    "p_vs_best (Holm)": 0.022556935983792277
+   },
+   {
+    "model": "Decision tree (depth 4)",
+    "cv_auc": 0.8939616389902979,
+    "cv_auc_sd": 0.029083697192823426,
+    "train_auc": 0.9341100484256498,
+    "brier": 0.12504663093328236,
+    "accuracy": 0.833011998099311,
+    "p_vs_best (corrected t)": 0.0014581258835454074,
+    "p_vs_best (Holm)": 0.020413762369635702
+   },
+   {
+    "model": "Prior only (no information)",
+    "cv_auc": 0.5,
+    "cv_auc_sd": 0.0,
+    "train_auc": 0.5,
+    "brier": 0.24715204510287186,
+    "accuracy": 0.5533737229745783,
+    "p_vs_best (corrected t)": 5.207927152080229e-41,
+    "p_vs_best (Holm)": 7.811890728120343e-40
+   }
+  ],
+  "best": "Extra trees",
+  "repeats": 10,
+  "indistinguishable_from_best": [
+   "Extra trees",
+   "Random forest",
+   "Histogram gradient boosting",
+   "SVM (RBF)",
+   "Logistic regression",
+   "LDA",
+   "Gradient boosting",
+   "XGBoost (3.4.1)",
+   "Logistic regression (L1, C=0.1)",
+   "LightGBM (4.6.0)",
+   "k-nearest neighbours (k=15)",
+   "Gaussian naive Bayes"
+  ]
+ },
+ "leave_one_hospital_out": {
+  "Cleveland (USA)": {
+   "n": 303,
+   "disease_rate": 0.45874587458745875,
+   "models": {
+    "Extra trees": {
+     "auc": 0.8124670994911388,
+     "auc_ci": [
+      0.7643624389656034,
+      0.8605717600166742
+     ],
+     "calibration_intercept": -0.25660159091501356,
+     "calibration_slope": 0.5593853432471734,
+     "observed_rate": 0.45874587458745875,
+     "mean_predicted": 0.49051418123078294,
+     "accuracy_at_0.5": 0.7161716171617162
+    },
+    "Random forest": {
+     "auc": 0.8084313037374978,
+     "auc_ci": [
+      0.7592640821717154,
+      0.8575985253032803
+     ],
+     "calibration_intercept": -0.24906112982130815,
+     "calibration_slope": 0.5678466408594969,
+     "observed_rate": 0.45874587458745875,
+     "mean_predicted": 0.4920291878065266,
+     "accuracy_at_0.5": 0.7128712871287128
+    },
+    "Histogram gradient boosting": {
+     "auc": 0.7868047025793999,
+     "auc_ci": [
+      0.7353117069654788,
+      0.8382976981933211
+     ],
+     "calibration_intercept": 0.09196662607469405,
+     "calibration_slope": 0.37146280530754405,
+     "observed_rate": 0.45874587458745875,
+     "mean_predicted": 0.4506905490234785,
+     "accuracy_at_0.5": 0.735973597359736
+    },
+    "Logistic regression": {
+     "auc": 0.8383049657834708,
+     "auc_ci": [
+      0.7937474060103805,
+      0.8828625255565611
+     ],
+     "calibration_intercept": 0.23835040748495318,
+     "calibration_slope": 0.5746822016301786,
+     "observed_rate": 0.45874587458745875,
+     "mean_predicted": 0.4347627828560449,
+     "accuracy_at_0.5": 0.7656765676567657
+    }
+   }
+  },
+  "Budapest (Hungary)": {
+   "n": 293,
+   "disease_rate": 0.36177474402730375,
+   "models": {
+    "Extra trees": {
+     "auc": 0.9578246392896782,
+     "auc_ci": [
+      0.9361236832003549,
+      0.9795255953790015
+     ],
+     "calibration_intercept": -0.4664397670114033,
+     "calibration_slope": 1.5822666208372158,
+     "observed_rate": 0.36177474402730375,
+     "mean_predicted": 0.4181321618998703,
+     "accuracy_at_0.5": 0.9249146757679181
+    },
+    "Random forest": {
+     "auc": 0.9591363131873676,
+     "auc_ci": [
+      0.9377722449551679,
+      0.9805003814195673
+     ],
+     "calibration_intercept": -0.5297702580504676,
+     "calibration_slope": 1.593736668660378,
+     "observed_rate": 0.36177474402730375,
+     "mean_predicted": 0.42982645533767505,
+     "accuracy_at_0.5": 0.9215017064846417
+    },
+    "Histogram gradient boosting": {
+     "auc": 0.9491474119665019,
+     "auc_ci": [
+      0.9237678530293225,
+      0.9745269709036812
+     ],
+     "calibration_intercept": -0.6179762317741613,
+     "calibration_slope": 1.1852039472960878,
+     "observed_rate": 0.36177474402730375,
+     "mean_predicted": 0.42459187048269875,
+     "accuracy_at_0.5": 0.9078498293515358
+    },
+    "Logistic regression": {
+     "auc": 0.9569165573605086,
+     "auc_ci": [
+      0.9365287008610079,
+      0.9773044138600093
+     ],
+     "calibration_intercept": -0.317716112575488,
+     "calibration_slope": 1.3104080606343236,
+     "observed_rate": 0.36177474402730375,
+     "mean_predicted": 0.39512155852955144,
+     "accuracy_at_0.5": 0.8976109215017065
+    }
+   }
+  },
+  "Zurich & Basel (Switzerland)": {
+   "n": 123,
+   "disease_rate": 0.9349593495934959,
+   "models": {
+    "Extra trees": {
+     "auc": 0.7673913043478269,
+     "auc_ci": [
+      0.6106978160347167,
+      0.924084792660937
+     ],
+     "calibration_intercept": 2.238837076144099,
+     "calibration_slope": 0.6679418621507835,
+     "observed_rate": 0.9349593495934959,
+     "mean_predicted": 0.7281481763533284,
+     "accuracy_at_0.5": 0.7723577235772358
+    },
+    "Random forest": {
+     "auc": 0.7804347826086957,
+     "auc_ci": [
+      0.6159174185776737,
+      0.9449521466397177
+     ],
+     "calibration_intercept": 2.3403710738121304,
+     "calibration_slope": 0.7777349247981874,
+     "observed_rate": 0.9349593495934959,
+     "mean_predicted": 0.7108944523833649,
+     "accuracy_at_0.5": 0.8211382113821138
+    },
+    "Histogram gradient boosting": {
+     "auc": 0.731521739130435,
+     "auc_ci": [
+      0.542196990234322,
+      0.9208464880265479
+     ],
+     "calibration_intercept": 2.7661532739312698,
+     "calibration_slope": 0.46969396282254233,
+     "observed_rate": 0.9349593495934959,
+     "mean_predicted": 0.7311550551338236,
+     "accuracy_at_0.5": 0.7560975609756098
+    },
+    "Logistic regression": {
+     "auc": 0.8108695652173914,
+     "auc_ci": [
+      0.647231119020051,
+      0.9745080114147318
+     ],
+     "calibration_intercept": 2.2023491719548365,
+     "calibration_slope": 0.7917252391468143,
+     "observed_rate": 0.9349593495934959,
+     "mean_predicted": 0.7511279909862603,
+     "accuracy_at_0.5": 0.8455284552845529
+    }
+   }
+  },
+  "Long Beach VA (USA)": {
+   "n": 199,
+   "disease_rate": 0.7437185929648241,
+   "models": {
+    "Extra trees": {
+     "auc": 0.8720190779014307,
+     "auc_ci": [
+      0.8106042201201242,
+      0.9334339356827372
+     ],
+     "calibration_intercept": 0.1849890064959576,
+     "calibration_slope": 1.1193422175877146,
+     "observed_rate": 0.7437185929648241,
+     "mean_predicted": 0.7213075724107328,
+     "accuracy_at_0.5": 0.8793969849246231
+    },
+    "Random forest": {
+     "auc": 0.8763910969793324,
+     "auc_ci": [
+      0.8145496369788102,
+      0.9382325569798545
+     ],
+     "calibration_intercept": 0.20389085901667275,
+     "calibration_slope": 1.3507819051786676,
+     "observed_rate": 0.7437185929648241,
+     "mean_predicted": 0.7172592695084732,
+     "accuracy_at_0.5": 0.8844221105527639
+    },
+    "Histogram gradient boosting": {
+     "auc": 0.8615527291997881,
+     "auc_ci": [
+      0.7956079382853918,
+      0.9274975201141844
+     ],
+     "calibration_intercept": -0.010399764418644175,
+     "calibration_slope": 0.8449684430642053,
+     "observed_rate": 0.7437185929648241,
+     "mean_predicted": 0.7447443256589158,
+     "accuracy_at_0.5": 0.8743718592964824
+    },
+    "Logistic regression": {
+     "auc": 0.8441971383147853,
+     "auc_ci": [
+      0.7743149144540687,
+      0.9140793621755018
+     ],
+     "calibration_intercept": -0.07479673759894333,
+     "calibration_slope": 0.8871146968871605,
+     "observed_rate": 0.7437185929648241,
+     "mean_predicted": 0.751603867927474,
+     "accuracy_at_0.5": 0.8793969849246231
+    }
+   }
+  }
+ },
+ "association_tests": [
+  {
+   "feature": "Sex",
+   "test": "chi-square",
+   "p": 4.597617450809164e-20,
+   "effect": "Cram\u00e9r's V",
+   "effect_size": 0.30275622279754005,
+   "p_holm": 2.7585704704854984e-19
+  },
+  {
+   "feature": "ChestPainType",
+   "test": "chi-square",
+   "p": 8.08372842808765e-58,
+   "effect": "Cram\u00e9r's V",
+   "effect_size": 0.5403815716169053,
+   "p_holm": 8.08372842808765e-57
+  },
+  {
+   "feature": "RestingECG",
+   "test": "chi-square",
+   "p": 0.0042292328167544925,
+   "effect": "Cram\u00e9r's V",
+   "effect_size": 0.10912341027519352,
+   "p_holm": 0.0042292328167544925
+  },
+  {
+   "feature": "ExerciseAngina",
+   "test": "chi-square",
+   "p": 2.907808387659878e-50,
+   "effect": "Cram\u00e9r's V",
+   "effect_size": 0.4920494053821572,
+   "p_holm": 2.6170275488938903e-49
+  },
+  {
+   "feature": "ST_Slope",
+   "test": "chi-square",
+   "p": 5.167637689470128e-78,
+   "effect": "Cram\u00e9r's V",
+   "effect_size": 0.6226642132252813,
+   "p_holm": 5.684401458417141e-77
+  },
+  {
+   "feature": "FastingBS",
+   "test": "chi-square",
+   "p": 1.0573018731809955e-15,
+   "effect": "Cram\u00e9r's V",
+   "effect_size": 0.26470001743528276,
+   "p_holm": 4.229207492723982e-15
+  },
+  {
+   "feature": "Age",
+   "test": "Mann-Whitney U",
+   "p": 1.805694139029245e-18,
+   "effect": "P(diseased > healthy)",
+   "effect_size": 0.6680550220856539,
+   "p_holm": 9.028470695146227e-18
+  },
+  {
+   "feature": "RestingBP (zeros as missing)",
+   "test": "Mann-Whitney U",
+   "p": 0.0004567880413235164,
+   "effect": "P(diseased > healthy)",
+   "effect_size": 0.5669889834993025,
+   "p_holm": 0.0013703641239705493
+  },
+  {
+   "feature": "Cholesterol (zeros as missing)",
+   "test": "Mann-Whitney U",
+   "p": 0.0017130070426659358,
+   "effect": "P(diseased > healthy)",
+   "effect_size": 0.5664037741284932,
+   "p_holm": 0.0034260140853318716
+  },
+  {
+   "feature": "MaxHR",
+   "test": "Mann-Whitney U",
+   "p": 1.5063588719598379e-34,
+   "effect": "P(diseased > healthy)",
+   "effect_size": 0.2649822354522758,
+   "p_holm": 1.0544512103718865e-33
+  },
+  {
+   "feature": "Oldpeak",
+   "test": "Mann-Whitney U",
+   "p": 6.767845043438792e-37,
+   "effect": "P(diseased > healthy)",
+   "effect_size": 0.7351449971192625,
+   "p_holm": 5.414276034751034e-36
+  }
+ ],
+ "odds_ratios": [
+  {
+   "feature": "Age (per 10)",
+   "odds_ratio": 1.1969136530070466,
+   "ci": [
+    0.9207172209861095,
+    1.5559633947329916
+   ],
+   "p": 0.17931080951213363
+  },
+  {
+   "feature": "RestingBP (per 10)",
+   "odds_ratio": 1.0623485725670316,
+   "ci": [
+    0.9336822102267023,
+    1.2087458422937973
+   ],
+   "p": 0.35849736502871643
+  },
+  {
+   "feature": "Cholesterol (per 40)",
+   "odds_ratio": 1.0899894517764066,
+   "ci": [
+    0.9347121204926921,
+    1.2710619440321251
+   ],
+   "p": 0.2717969527371463
+  },
+  {
+   "feature": "FastingBS",
+   "odds_ratio": 2.5952487507084365,
+   "ci": [
+    1.4789571358281233,
+    4.554098232388828
+   ],
+   "p": 0.0008874632171216042
+  },
+  {
+   "feature": "MaxHR (per 10)",
+   "odds_ratio": 0.9785786372215111,
+   "ci": [
+    0.883376382532156,
+    1.0840409231695205
+   ],
+   "p": 0.6783784163441229
+  },
+  {
+   "feature": "Oldpeak (per 1)",
+   "odds_ratio": 1.4864375798475322,
+   "ci": [
+    1.1736367703420947,
+    1.88260689731028
+   ],
+   "p": 0.0010084581517512653
+  },
+  {
+   "feature": "Cholesterol_missing",
+   "odds_ratio": 5.719443440565225,
+   "ci": [
+    2.910739960210325,
+    11.238390827417254
+   ],
+   "p": 4.1880278997124797e-07
+  },
+  {
+   "feature": "Sex_M",
+   "odds_ratio": 4.697472851676688,
+   "ci": [
+    2.683855680780534,
+    8.221847154546731
+   ],
+   "p": 6.06721148747276e-08
+  },
+  {
+   "feature": "ChestPainType_ATA",
+   "odds_ratio": 0.17420710981295387,
+   "ci": [
+    0.09106001295915207,
+    0.33327600253028955
+   ],
+   "p": 1.2935076474036436e-07
+  },
+  {
+   "feature": "ChestPainType_NAP",
+   "odds_ratio": 0.19691746317302988,
+   "ci": [
+    0.1154886631893786,
+    0.33576011905961545
+   ],
+   "p": 2.3923200056498966e-09
+  },
+  {
+   "feature": "ChestPainType_TA",
+   "odds_ratio": 0.24805318827316128,
+   "ci": [
+    0.10406153620326829,
+    0.5912884477535505
+   ],
+   "p": 0.0016574628594008558
+  },
+  {
+   "feature": "RestingECG_Normal",
+   "odds_ratio": 0.8280697112208499,
+   "ci": [
+    0.48400758453153697,
+    1.416712193270812
+   ],
+   "p": 0.4910825452893455
+  },
+  {
+   "feature": "RestingECG_ST",
+   "odds_ratio": 0.7166154633190779,
+   "ci": [
+    0.3566384543028557,
+    1.4399392888572886
+   ],
+   "p": 0.34931259972008477
+  },
+  {
+   "feature": "ExerciseAngina_Y",
+   "odds_ratio": 2.4608172025374073,
+   "ci": [
+    1.5152325501051875,
+    3.9964963159507434
+   ],
+   "p": 0.00027298362126355506
+  },
+  {
+   "feature": "ST_Slope_Flat",
+   "odds_ratio": 4.3479781806950095,
+   "ci": [
+    1.8382194276410162,
+    10.284362125396822
+   ],
+   "p": 0.0008198065181323327
+  },
+  {
+   "feature": "ST_Slope_Up",
+   "odds_ratio": 0.38973567237372264,
+   "ci": [
+    0.15689784123237097,
+    0.9681069741146897
+   ],
+   "p": 0.04237467435310461
+  }
+ ],
+ "shap_logistic": {
+  "mean_abs_shap": {
+   "ST_Slope": 1.0936288375111674,
+   "ChestPainType": 0.7873973958282213,
+   "Cholesterol": 0.512241997981919,
+   "Sex": 0.46884956313658505,
+   "ExerciseAngina": 0.4203940265141289,
+   "Oldpeak": 0.34783152544493945,
+   "FastingBS": 0.33603334793146844,
+   "Age": 0.13019420550551197,
+   "RestingBP": 0.08402602252369766,
+   "RestingECG": 0.06682792845564703,
+   "MaxHR": 0.06471907281280372
+  },
+  "additivity_max_error": 2.220446049250313e-15
+ }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+data/raw/
+# The 918-row Kaggle file: licence unconfirmed, so it is not redistributed (see data/README.md)
+data/heart_failure_918.csv
+results/models.joblib

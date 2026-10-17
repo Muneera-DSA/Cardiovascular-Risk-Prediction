@@ -1,0 +1,26 @@
+Cohort construction:
+   59,204  adults in NHANES 1999-2018 (all ages, interviewed)
+   56,367  examined at the mobile examination centre  (-2,837)
+   30,704  aged 40-79  (-25,663)
+   30,673  not pregnant  (-31)
+   30,603  eligible for mortality linkage  (-70)
+   26,289  no self-reported heart disease or stroke (prevention population)  (-4,314)
+   23,888  core risk factors measured (cholesterol, HDL, BP, BP treatment, smoking, diabetes)  (-2,401)
+   23,888  follow-up time recorded
+
+   development: 6,081 people, cycles [1999, 2001, 2003], 10-year CVD deaths 188 of 6,081 with complete follow-up (3.09%); median follow-up 16.9 years
+        recent: 13,083 people, cycles [2009, 2011, 2013, 2015, 2017], CVD deaths during follow-up 174; median follow-up 5.8 years
+ temporal_test: 4,724 people, cycles [2005, 2007], 10-year CVD deaths 133 of 4,724 with complete follow-up (2.82%); median follow-up 12.3 years
+
+Mortality-file layout checks (share passing, by cycle):
+  1999: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 0.999, eligible: follow-up months 0-300 1.000
+  2001: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 0.999, eligible: follow-up months 0-300 1.000
+  2003: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 1.000, eligible: follow-up months 0-300 1.000
+  2005: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 1.000, eligible: follow-up months 0-300 1.000
+  2007: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 1.000, eligible: follow-up months 0-300 1.000
+  2009: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 1.000, eligible: follow-up months 0-300 1.000
+  2011: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 1.000, eligible: follow-up months 0-300 1.000
+  2013: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 1.000, eligible: follow-up months 0-300 1.000
+  2015: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 1.000, eligible: follow-up months 0-300 1.000
+  2017: linked to a survey participant 1.000, eligstat in {1,2,3} 1.000, eligible: mortstat in {0,1} 1.000, deaths: cause code 1-10 1.000, eligible: follow-up months 0-300 1.000
+Layout vs NCHS read-in program: {"seqn": {"ours": [1, 6], "nchs_program": [[1, 6]]}, "eligstat": {"ours": [15, 15], "nchs_program": [[15, 15]]}, "mortstat": {"ours": [16, 16], "nchs_program": [[16, 16]]}, "ucod_leading": {"ours": [17, 19], "nchs_program": [[17, 19]]}, "diabetes_flag": {"ours": [20, 20], "nchs_program": [[20, 20]]}, "hyperten_flag": {"ours": [21, 21], "nchs_program": [[21, 21]]}, "permth_int": {"ours": [43, 45], "nchs_program": [[43, 45]]}, "permth_exm": {"ours": [46, 48], "nchs_program": [[46, 48]]}}

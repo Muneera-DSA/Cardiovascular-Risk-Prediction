@@ -1,0 +1,74 @@
+{
+ "women": {
+  "n": 2423,
+  "events": 58,
+  "pce_auc": 0.8225559524677406,
+  "logistic_auc": 0.8512612087191077,
+  "pce_recalibrated_o_e": 1.0666562698331399,
+  "logistic_o_e": 1.0993830944449687
+ },
+ "men": {
+  "n": 2301,
+  "events": 75,
+  "pce_auc": 0.7691554357592094,
+  "logistic_auc": 0.7911290805630429,
+  "pce_recalibrated_o_e": 0.900916376101115,
+  "logistic_o_e": 0.9469930130855495
+ },
+ "non-Hispanic Black": {
+  "n": 983,
+  "events": 34,
+  "pce_auc": 0.8124186450133267,
+  "logistic_auc": 0.8295109403086842,
+  "pce_recalibrated_o_e": 1.0337912927408088,
+  "logistic_o_e": 0.9695269136393903
+ },
+ "Hispanic": {
+  "n": 1211,
+  "events": 21,
+  "pce_auc": 0.7417366946778711,
+  "logistic_auc": 0.7601440576230493,
+  "pce_recalibrated_o_e": 0.6504173821257869,
+  "logistic_o_e": 0.712227038987308
+ },
+ "other (mostly non-Hispanic White)": {
+  "n": 2530,
+  "events": 78,
+  "pce_auc": 0.808557640021751,
+  "logistic_auc": 0.8337228635964362,
+  "pce_recalibrated_o_e": 1.076626993882136,
+  "logistic_o_e": 1.1572480522625088
+ },
+ "age 40-59": {
+  "n": 2753,
+  "events": 30,
+  "pce_auc": 0.7600930346431631,
+  "logistic_auc": 0.8148916636063166,
+  "pce_recalibrated_o_e": 0.9090785125657378,
+  "logistic_o_e": 1.0369743576980828
+ },
+ "age 60-79": {
+  "n": 1971,
+  "events": 103,
+  "pce_auc": 0.716115569322883,
+  "logistic_auc": 0.7436201950063408,
+  "pce_recalibrated_o_e": 0.9844810422882397,
+  "logistic_o_e": 0.9997613191180863
+ },
+ "diabetes": {
+  "n": 799,
+  "events": 37,
+  "pce_auc": 0.6980917925799816,
+  "logistic_auc": 0.7446087820103569,
+  "pce_recalibrated_o_e": 0.7154536440181115,
+  "logistic_o_e": 0.840198359478641
+ },
+ "no diabetes": {
+  "n": 3925,
+  "events": 96,
+  "pce_auc": 0.8246740880995909,
+  "logistic_auc": 0.836210226778097,
+  "pce_recalibrated_o_e": 1.1174659225274846,
+  "logistic_o_e": 1.0919304180990195
+ }
+}
